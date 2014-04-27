@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>prettymaps | august 2010 | layers</title>
+		<script type="text/javascript" src="../polymaps.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+	<body onload="load_prettymaps();">
+
+		<div id="ground_label" class="label">flickr</div>
+		<div id="flurban_label" class="label">flickr + natural earth</div>
+		<div id="osm_label" class="label">osm</div>
+		<div id="urban_label" class="label">natural earth</div>
+
+		<div id="blurb">
+			<p>you are looking at zoom level <span id="zoomlevel">3</span> &#8212; <span id="zoomin"><a href="#" onclick="ground_map.zoomBy(1); return false;">zoom in</a><span id="zoomor"> or </span></span><span id="zoomout"><a href="#" onclick="ground_map.zoomBy(-1); return false;">zoom out</a></span></p>
+			<p>this is a thing by <a href="http://www.stamen.com/" target="_stamen">stamen design</a> / road data CCBYSA 2010 <a href="http://www.openstreetmap.org/" target="_osm">openstreetmap.org</a> contributors / <a href="/201008" onclick="gotomap(); return false;">take me to the map!</a></p>
+		</div>
+
+	</body>
+</html>

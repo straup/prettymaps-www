@@ -1,0 +1,53 @@
+a { 
+	color:#fff;
+	font-weight:700;
+	font-size:1.2em;
+}
+
+a:hover { 
+}
+
+body { 
+	background: url(nyc.jpg);
+    background-repeat:no-repeat;	
+	font-family:sans-serif;
+}
+
+#title{ 
+    font-size:48pt;
+    padding:25px;
+    background-color:white;
+    font-family:sans-serif;
+    font-weight:700;
+    position:absolute;
+    top:0;
+    left:0;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+#tablecloth { 
+
+	position:absolute;
+	top:35%;
+	left:25%;
+	width:600;
+	height:240;
+	opacity:.3;
+	background-color:#000;
+}
+
+#intro{ 
+	position:absolute;
+	top:38%;
+	left:29%;
+	width:600;
+	color:#fff;
+	font-size:18pt;
+}
+
+.caveat{ 
+	font-size:9pt;
+	padding-right:80px;
+	line-height:18px;
+ }

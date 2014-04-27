@@ -1,0 +1,350 @@
+/* tags */
+
+body {
+    margin:0px;
+    font-family:sans-serif;
+    font-size:8pt;
+}
+
+input[type='text']{
+    border: solid thin;
+    font-weight:700;
+    color:darkslategrey;
+    padding:3px;
+}
+
+input[type='submit']{
+    border: solid thin;
+    font-weight:700;
+    background-color:#ddd;
+    display:none;
+}
+
+path {
+    stroke:blue;
+    stroke-width:2px;
+    fill:none;
+}
+
+svg {
+    height:100%;
+    width:100%;
+    background-color:#ffffcc;
+}
+
+/* ids */
+
+#blahblahblah{
+    padding-top:10px;
+    margin-left:5px;
+    line-height:14px;
+}
+
+#bucket{
+
+}
+
+#colophon {
+    position: absolute;
+    bottom: 20;
+    left: 45;
+    color:#adadad;
+}
+
+#colophon a {
+    text-decoration: none;
+    color: #666;
+
+}
+
+#colophon a:hover {
+    font-weight:700;
+}
+
+#far {
+    position:absolute;
+	bottom:40;
+	right:140;
+}
+
+#feedback {
+    color:darkslategrey;
+    font-style:italic;
+}
+
+#footer {
+	border:0;
+	border-top:1px dotted #ccc;
+	margin:0px;
+    position:absolute;
+    bottom:0;
+    right:0;
+	background-color:#ffffff;
+    width:100%;
+    height:125px;
+	opacity:.75;
+    background-image: url('grover.jpg');
+    background-repeat:no-repeat;
+    background-position:96% bottom;
+}
+
+#near {
+    position:absolute;
+    bottom:75;
+    right:140;
+}
+
+#monitor {
+    position:absolute;
+    top:0;
+    right:0;
+    padding:20px;
+    opacity:.5;
+    display:none;
+    font-weight:700;
+    background-color:#ccc;
+    border:1px solid #fff;
+    margin:15px;
+}
+
+#search{
+    position: absolute;
+	bottom:40;
+	left:40;
+}
+
+#slow {
+	position:absolute;
+	top:15%;
+	left:25%;
+	width:600;
+	max-width:600;
+	height:300;
+	opacity:.75;
+	background-color:#000;
+	color:#fff;
+	display:none;
+	padding:20px;
+	padding-left:30px;
+	padding-right:30px;
+	border:1px solid #fff;
+	font-size:1.25em;
+	line-height: 1.3em;
+}
+
+#slow a {
+    color:#fff;
+    font-weight: 700;
+}
+
+#static {
+	position:absolute;
+	top:15%;
+	left:25%;
+	width:600;
+	max-width:600;
+	height:300;
+	opacity:.75;
+	background-color:#000;
+	color:#fff;
+	display:none;
+	padding:20px;
+	padding-left:30px;
+	padding-right:30px;
+	border:1px solid #fff;
+	font-size:1.25em;
+	line-height: 1.3em;
+}
+
+#static a {
+    color:#fff;
+    font-weight: 700;
+}
+
+#thing{
+    padding-top:absolute;
+    bottom:0;
+    left:0;
+}
+
+#whereami{
+    font-size:36pt;
+    padding:25px;
+    background-color:white;
+    font-family:sans-serif;
+    font-weight:700;
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+#why {
+    margin-top: 6px;
+}
+
+#why a {
+    font-weight:300;
+    opacity: 1 !important;
+    color:#000;
+}
+
+/* classes */
+
+.cycleway {
+
+}
+
+.cycleway:hover {
+    stroke:#ccffcc;
+    stroke-width:18px !important;
+    stroke-dasharray:3,3 !important;
+}
+
+.footway {
+    stroke:#ccff66;
+    stroke-width:10px;
+    opacity:.2;
+}
+
+.ima {
+    font-size:8pt;
+    font-weight:100;
+    margin-top:5px;
+}
+
+.motorway {
+    stroke-width:25px !important;
+    opacity:.25;
+    stroke:00ffff;
+}
+
+.motorway_link {
+    stroke-width:4px;
+    opacity:.6;
+    stroke:white;
+}
+
+.naturalearth {
+    stroke-width:10px;
+    opacity:0 !important;
+}
+
+.naturalearth:hover{
+    fill: #ffff99;
+    fill-opacity:.65 !important;
+    stroke: #ffffff;
+    stroke-width:1.5;
+    opacity: 1 !important;
+}
+
+.osm {
+    opacity:0 !important;
+    stroke-width:10px;
+}
+
+.osm:hover {
+    opacity:.65 !important;
+    stroke-width:1.25em !important;
+    stroke-dasharray:none !important;
+}
+
+.path {
+    stroke:#ccff66;
+    stroke-width:10px;
+    opacity:.2;
+}
+
+.pedestrian {
+
+}
+
+.pedestrian:hover {
+    stroke:#ccffcc;
+    stroke-width:18px !important;
+    stroke-dasharray:3,3 !important;
+}
+
+.primary {
+    stroke-width:25px !important;
+    opacity:.25;
+    stroke:00ffff;
+}
+
+.primary_link{
+    stroke-width:4px;
+    opacity:.6;
+    stroke:white;
+}
+
+.secondary{
+    stroke-width:4px;
+    opacity:.6;
+    stroke:#ffff99;
+}
+
+.stairs {
+
+}
+
+.stairs:hover {
+    stroke:#ccffcc;
+    stroke-width:18px !important;
+    stroke-dasharray:3,3 !important;
+}
+
+.steps {
+
+}
+
+.steps:hover {
+    stroke:#ccffcc;
+    stroke-width:18px !important;
+    stroke-dasharray:3,3 !important;
+}
+
+.tertiary{
+    stroke:#ffffff;
+    stroke-width:4;
+    stroke-dasharray:3,4,3;
+    opacity:.5;
+}
+
+.trunk{
+    stroke:#ffffff;
+    opacity:.5;
+}
+
+.trunk_link{
+    stroke-width:4px;
+    opacity:.6;
+    stroke:white;
+}
+
+.woe {
+    stroke-width:10px;
+    opacity:0 !important;
+}
+
+.woe:hover{
+    fill: #FF3399;
+    fill-opacity:.4 !important;
+    stroke: #ffffff;
+    stroke-width:1.5;
+    opacity: 1 !important;
+}
+
+.zoom{
+    font-size:14pt;
+    font-weight:700;
+    text-decoration:none;
+    color:darkslategrey;
+}
+
+.zoom:hover{
+    font-size:18pt;
+    color:#000080;
+    font-style:italic;
+}

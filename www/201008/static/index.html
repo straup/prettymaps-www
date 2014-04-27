@@ -1,0 +1,50 @@
+<html>
+	<head>
+	<title>prettymaps | august 2010 | static</title>
+	<script type="text/javascript" src="../polymaps.min.js?cb=1313691731"></script>
+	<!--
+	<script type="text/javascript" src="../prettymaps.static.min.js?cb=1313691731"></script>
+	-->
+	<script type="text/javascript" src="../polymaps.tilestache.js"></script>
+	<script type="text/javascript" src="../flickr.api.js"></script>
+	<script type="text/javascript" src="../geocoder.js"></script>
+	<script type="text/javascript" src="../prettymaps.globals.js"></script>
+	<script type="text/javascript" src="../prettymaps.shared.js"></script>
+	<script type="text/javascript" src="../prettymaps.static.js"></script>
+	<link rel="stylesheet" type="text/css" href="../prettymaps.css" />
+	</head>
+	<body onload="load_staticmap();">
+
+		<div id="static">
+		  <p>This is a static, non-interactive, version of <a href="/">prettymaps</a>.</p>
+
+		  <p>That means that all the different image layers (OSM, Flickr, Natural Earth) have been combined in to a single layer and none of the data layers, containing places names and outlines, are being sent to the browser.</p>
+
+		  <p>It's basically a simple <q><a href="http://wiki.openstreetmap.org/wiki/Slippy_Map">slippy map</a></q> to demonstrate the pretty in prettymaps.</p>
+
+		  <p>Big chunks of prettymaps have been left un-optimized <a href="/201008/about/">by design</a> because we wanted to leave <a href="/201008/index.js">all the plumbing exposed</a> so that people could look at it and learn from it and, hopefully, build something new. This version was added because the default version of prettymaps can be difficult to view for people with older computers or slow network connections and can, hopefully, act as a kind of middle ground between the fast and the possible.</p>
+
+		  <p>The <a href="#" onclick="goto_prettymaps();">full, interactive, version of prettymaps</a> is over here.</p>
+
+		  <p><a href="#" onclick="toggle_static_notice(0); return false;">(close this message)</a></p>
+		</div>
+
+		<div id="footer">
+
+			<div id="near"><a href="#" onclick="map.zoomBy(1);" class="zoom" id="near_text">neeeeeeeeear</a></div>
+			<div id="far"><a href="#" onclick="map.zoomBy(-1);" class="zoom">faaaaaaaar</a></div>
+
+			<form id="search" method="GET" onsubmit="javascript:geocode(); return false;">
+				<input type="text" name="q" size="40" onclick="show_submit(1);return false;" />
+				<input type="submit" value="SHOW ME! SHOW ME NOW!!" id="submit" />
+				<div id="blahblahblah">
+					<div id="feedback"></div>
+					<div id="instructions">search for a location</div>
+				</div>
+			</form>
+
+			<div id="colophon">this is a thing by <a href="http://www.stamen.com/" target="_stamen">stamen design</a> / road data CCBYSA 2010 <a href="http://www.openstreetmap.org/" target="_osm">openstreetmap.org</a> contributors / <a href="../about/">tell me more</a> &#8212; this is the <a href="#" onclick="toggle_static_notice(true);">static version</a></div>
+		</div>
+
+        </body>
+</html>

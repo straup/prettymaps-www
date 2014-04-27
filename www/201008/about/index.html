@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <title>prettymaps | august 2010 | about</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body id="big">
+
+    <h1>about prettymaps</h1>
+
+    <p>prettymaps is an experimental map from <a href="http://www.stamen.com/">Stamen Design</a>. It is an interactive map composed of multiple freely available, community-generated data sources:</p>
+
+	<ul>
+	<li>All the <a href="http://code.flickr.com/blog/2008/10/30/the-shape-of-alpha/">Flickr shapefiles</a> rendered as a semi-transparent white ground on top of which all the other layers are displayed.</li>
+
+	<li>Urban areas from <a href="http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-urban-area/">Natural Earth</a> both as a standalone layer and combined with Flickr shapefiles for <a href="http://code.flickr.com/blog/2009/01/12/living-in-the-donut-hole/">cities and neighbourhoods</a>.</li>
+
+	<li>Road, highway and path data collected by the <a href="http://www.openstreetmap.org">OpenStreetMap</a> (OSM) project.</li>
+
+	</ul>
+
+	<p>In all there are four different raster layers and six data
+	layers <span style="font-style:italic;">(that mean all the map data is sent in its raw form and <a href="http://www.flickr.com/photos/24693518@N00/1415064612">rendered as visual elements by the browser</a>)</span> that may be visible depending on the bounding box and zoom level
+	of the map.</p>
+
+	<p>It looks (at least for the stuff you can see) <a href="/201008/layers/">like this</a>:</p>
+
+	<div class="image1024" style="width:991px !important;">
+		<a href="/201008/layers/"><img src="layers.png" width="991" height="602" /></a>
+	</div>
+
+	<p>But when you put it all together here's what the world looks like at zoom level 3:</p>
+
+	<div class="image1024">
+		<a href="/201008/#3.00/24.42/-49.65"><img src="world.jpg" width="1024" height="637" alt="" /></a>
+		<a href="http://sta.mn/gs" class="permalink">http://sta.mn/gs</a>
+	</div>
+
+	<p>The white ghost-like shapes represent all the places where Flickr users have taken photos; the blue and green lines are OSM motorways and paths respectively; the orange shapes are <q>urban areas</q> as identified by Natural Earth. Unlike traditional maps most (and sometimes) all the data for a given layer is displayed, with only subtle variations in line width and other design considerations, regardless of zoom level.</p>
+
+	<p>This clustering effect offers a view of built environments around the world but also a visual representation of those places where no data has been recorded. This is most pronounced when you compare the density of coverage for Africa and South America with North America and Europe but you can see the same thing happening when you look at a map of the border between Canada and the United States:</p>
+
+	<div class="image1024">
+		<a href="/201008/#5.00/45.319/-86.226"><img src="north.jpg" width="1024" height="639" alt="#2899" /></a>
+		<a href="http://sta.mn/s4h" class="permalink">http://sta.mn/s4h</a>
+	</div>
+
+	<p>At first glance, there seems to be much happening <span style="font-style:italic;">(aside from what appears to be a bulk import of road data in to OSM for the province of Alberta, in the top left hand corner)</span> much beyond the fiftieth or fifty-first parallel, which pretty accurately reflects where most Canadians live, but if you look closely you can make out the traces of the the outline of all places where people have taken photos and uploaded them to <a href="http://www.flickr.com/places/info/23424775">Flickr</a>.</p>
+
+	<p>At zoom level 4 the shapes of urban areas begin to respond to mouse events on the screen. As you move you mouse over the outline for an area its name (or in the case of Natural Earth data its unique ID) will be displayed. As you continue to zoom in the pink and blue shapes of cities and neighbourhoods derived from Flickr photos beging to appear and the Natural Earth urban areas shift from the foreground to the background with the OSM roads overlapping in hot flashes around towns and cities and holding everything together in whispers.</p>
+
+	<div class="image1024">
+		<a href="/201008/#8.00/41.007/-72.833"><img src="ne.jpg" width="1024" height="638" alt="East Coast" /></a>
+		<a href="http://sta.mn/kwq" class="permalink">http://sta.mn/kwq</a>
+	</div>
+
+	<p>At zoom level 8 city names are shown alongside motorways:</p>
+
+	<div class="image1024">
+		<a href="/201008/#9.00/48.8108/2.3492"><img src="paris.jpg" width="1024" height="638" alt="20e" /></a>
+		<a href="http://sta.mn/wgs" class="permalink">http://sta.mn/wgs</a>
+	</div>
+
+	<p>Here's another example just because it's... well, pretty:</p>
+
+	<div class="image1024">
+		<a href="/201008/#9.00/33.9460/-118.1159"><img src="la.jpg" width="1024" height="551" alt="LA" /></a>
+		<a href="http://sta.mn/sf" class="permalink">http://sta.mn/sf</a>
+	</div>
+
+	<p>At zoom level 13 neighbourhood names are shown, as are smaller roads and paths and cycleways. On-ramps and off-ramps (or <q>links</q> as they are known in <a href="http://wiki.openstreetmap.org/wiki/Map_Features">OSM lingo</a>) are given extra special attention and it's fascinating to see the way they stand out in relation to the rest of the city almost like cartilage in an x-ray:</p>
+
+	<div class="image1024">
+		<a href="/201008/#12.00/37.7847/-122.3365"><img src="sf.jpg" width="1024" height="638" alt="Bay Bridge" /></a>
+		<a href="http://sta.mn/wgy" class="permalink">http://sta.mn/wgy</a>
+	</div>
+
+	<a name="cities"></a>
+
+	<p>The entire world has been mapped this way between zoom levels 2 and
+	10. So far, only a handful of cities have been mapped to <a href="/201008/#15.00/37.7675/-122.4727">street level</a> (or zoom level 15). They are:</p>
+
+	<a name="cities_201008"></a>
+
+	<ul style="margin-left:75px;">
+
+	<li>The <a href="/201008/#9.00/37.5464/-122.0629">San Francisco Bay Area</a> and <a href="/201008/#9.00/34.0530/-118.2450">Los Angeles</a>, <a href="/201008/#9.00/40.7140/-74.0070">New York</a>, <a href="/201008/#9.00/51.5060/-0.1270">London</a>, <a href="/201008/#9.00/48.8560/2.3410">Paris</a>.</li>
+
+	</ul>
+
+	<a name="cities_201102"></a>
+
+	<ul style="margin-left:75px;">
+
+	<li><a href="/201008/#9.00/45.5120/-73.5540">Montr&#233;al</a>, <a href="/201008/#9.00/38.7250/-9.1500">Lisbon</a>, <a href="/201008/#9.00/32.7780/-96.7950">Dallas</a> and <a href="/201008/#9.00/29.7600/-95.3690">Houston</a> and <a href="/201008/#9.00/30.2670/-97.7420">Austin</a>, <a href="/201008/#9.00/-33.8690/151.2060">Sydney</a> and <a href="/201008/#9.00/-34.9260/138.5990">Adelaide</a>, <a href="/201008/#9.00/42.3310/-83.0470">Detroit</a>, <a href="/201008/#9.00/53.7430/-0.3450">Hull (UK)</a>.</li>
+
+	</ul>
+
+	<p>The plan is to add more cities as fast as time and life's usual
+	bad craziness permit. If
+	there's some place you're keen to see mapped <a href="http://stamen.com/contact">let us know</a>.</p>
+
+	<p>These maps were made using <a href="http://www.tilestache.org/">TileStache</a> and <a href="http://www.polymaps.org/">PolyMaps</a>, open-source tools developed by <a href="http://www.stamen.com">Stamen</a> for generating map tiles and creating interactive slippy-maps. These tools make it possible to design individual map layers quickly and allow you to easily re-arrange the order in which they are displayed and ultimately how they affect one another. The ability to create conventional map tiles that are just raw data and have them be processed and then rendered in the browser opens up <a href="http://magicalnihilism.com/2009/02/18/exporting-the-past-into-the-future-or-the-possibility-jelly-lives-on-the-hypersurface-of-the-present/">avenues</a> only just glimpsed at by a project like prettymaps.</p>
+
+	<p>Under normal circumstances, it might be practical to take the four raster layers and render them as a single composited tile set (if only to save on disk space) but we've left them as-is for people who want to look under the hood and see the potential that these tools offer for making new and interesting maps.</p>
+
+	<p>prettymaps operates very much at the edge of what the current crop of web browsers are comfortable doing. SVG support in most browsers is still a work in progress and not necessarily designed for displaying the volume of data that prettymaps can sometimes load. That any of this is possible at all is reason enough to celebrate and, we think, to investigate what is possible and where the rough edges remain.</p>
+
+       <p style="font-style:italic;">As of this writing, prettymaps works best in the most recent versions of <a href="http://www.apple.com/safari/">Safari</a> and <a href="http://www.getfirefox.net/">Firefox</a>, only sort of works in developer versions of Chrome and has not been tested in IE &#8212; <strong>it will ask a lot from your browser no matter what.</strong></p>
+
+	<p>If you'd like to hide the search box and other map controls you can
+	toggle their display by pressing the <code>escape</code> button on your keyboard.</p>
+
+
+	<div class="image1024">
+		<a href="/201008/#10.00/35.5907/139.8952"><img src="tokyo.jpg" width="1024" height="724" alt="Tokyo" /></a>
+		<a href="http://sta.mn/zj" class="permalink">http://sta.mn/zj</a>
+	</div>
+
+	    <p>This version (August 2010) of prettymaps is coded-named <q>Isola</q> after
+    the Finnish textile
+    designer <a href="http://www.marimekko.fi/ENG/design/designers/maijaisola/">Maija
+    Isola</a>. At a time when the tools for making custom maps and bespoke cartographies are becoming easier and more accessible it
+    is nice to look back at her <a href="http://www.flickr.com/search/show/?q=maija+isola&z=m&ss=2">work</a> and imagine the maps she
+    might have made if she were alive today.</p>
+
+    <p>Isola is also <a href="http://en.wikipedia.org/wiki/Isola_%28fictional_city%29">a fictional city</a> in the novels of the writer Ed McBain:</p>
+
+    <blockquote>
+      <p><q>The town, Isola, in which these novels were set, was unmistakably New York. Since it did not declare itself as the Big Apple, it was not open to McBain to rely merely on a recital of the city's famous precincts, parks and landmarks to give his background authenticity. Isola lived, triumphantly in its own right, alongside New York but not simply mimicking it.</q></p>
+      <p class="attrib">&#8212; <a href="http://www.timesonline.co.uk/tol/comment/obituaries/article541447.ece">The Times (of London)</a></p>
+    </blockquote>
+
+	<p>Which is a healthy way to <a href="http://www.thisamericanlife.org/radio-archives/episode/110/Mapping">think about maps</a> in general.</p>
+
+	<a name="20x200"></a>
+
+	<div style="text-align:center;margin-top:40px;">
+	<a href="http://www.20x200.com/artists/aaron-straup-cope.html"><img src="20x200.png" height="201" width="651" style="border:none;" /></a>
+	</div>
+
+	<p>Finally, prettymaps are also available as limited edition prints from the fantabulous crew at <a href="http://www.20x200.com/artists/aaron-straup-cope.html">20x200</a> which is about <a href="http://www.aaronland.info/weblog/2010/09/07/light/#20x200">as good as it gets</a>!</p>
+
+
+	<div id="great">
+		<p>Okay, great. <a href="/201008/">Now take me to the map!</a></p>
+	</div>
+
+	<div id="footer">
+		<div id="colophon">this is a thing by <a href="http://www.stamen.com/" target="_stamen">stamen design</a> / road data CCBYSA 2010 <a href="http://www.openstreetmap.org/" target="_osm">openstreetmap.org</a> contributors</div>
+	</div>
+
+  </body>
+</html>
