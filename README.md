@@ -2,4 +2,5 @@
 
 ## See also
 
+* prettymaps-tilestache
 * prettymaps-mbtiles

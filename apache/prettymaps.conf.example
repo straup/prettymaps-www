@@ -1,7 +1,12 @@
 <VirtualHost *:80>
 
+	# Adjust to taste:
+	#
+	# /usr/local/prettymaps-www/www
+	# prettymaps.example.com
+	# tilestache.localhost:9999
+
 	ServerName prettymaps.example.com
-	# ServerAdmin webmaster@localhost
 
 	DocumentRoot /usr/local/prettymaps-www/www
 
@@ -13,8 +18,12 @@
 	<Directory /usr/local/prettymaps-www/www>
 		Options FollowSymLinks Indexes
 		AllowOverride All
-
 		Require all granted		
+
+		RewriteEngine	On
+		RewriteRule	201008/tiles/([a-z\-]+)/([0-9]+)/([0-9]+)/([0-9]+).png		http://tilestache.localhost:9999/$1/$2/$3/$4.png		[P,L]
+		RewriteRule	201008/tiles/([a-z\-]+)\.json/([0-9]+)/([0-9]+)/([0-9]+).json	http://tilestache.localhost:9999/$1.json/$2/$3/$4.json	[P,L]
+
 	</Directory>
 
 	ErrorLog ${APACHE_LOG_DIR}/error.log
